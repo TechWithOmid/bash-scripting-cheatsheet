@@ -132,3 +132,8 @@
 # 
 # sayHello "omid" "17"
 
+# CREATE DIRECTORY AND WRITE TO A FILE
+mkdir test
+touch "test/test.txt"
+echo "Test for writing inside file" >> 'test/test.txt'
+echo "done."
