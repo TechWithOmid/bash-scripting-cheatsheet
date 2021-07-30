@@ -87,15 +87,21 @@
 # fi
 
 # CASE STATEMENT
-read -p "Are you 21 or over? Y/N " ANSWER
-case "$ANSWER" in
-    [yY] | [yY][eS][sS]) # specife both uppercase and lowercase letters
-        echo "You can have bear :)"
-        ;;
-    [nN] | [nN][oO])
-        echo "Sorry no drink"
-        ;;
-    *) # if input not equal to cases we print this line
-        echo "Please enter (y/n)"
-esac # end the case
+# read -p "Are you 21 or over? Y/N " ANSWER
+# case "$ANSWER" in
+#     [yY] | [yY][eS][sS]) # specife both uppercase and lowercase letters
+#         echo "You can have bear :)"
+#         ;;
+#     [nN] | [nN][oO])
+#         echo "Sorry no drink"
+#         ;;
+#     *) # if input not equal to cases we print this line
+#         echo "Please enter (y/n)"
+# esac # end the case
         
+# FOR LOOP
+NAMES="Omid Dane Kalle"
+for NAME in $NAMES
+do
+    echo "Hey, $NAME"
+done
