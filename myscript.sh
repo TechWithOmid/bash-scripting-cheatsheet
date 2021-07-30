@@ -109,9 +109,26 @@
 # run FileRename.sh for see example of how we can use for to rename files
 
 # WHILE LOOP - READ THROUGH A FILE LINE BY LINE
-LINE=1
-while read -r CURRENT_LINE
-do
-    echo "$LINE: $CURRENT_LINE"
-    ((LINE++))
-done < './new-1.txt'
+# LINE=1
+# while read -r CURRENT_LINE
+# do
+#     echo "$LINE: $CURRENT_LINE"
+#     ((LINE++))
+# done < './new-1.txt'
+
+# FUCNTIONS
+
+# step1: define the function 
+# function sayHello(){
+#     echo "hello world in fucntion 1!"
+# }
+# step2: call the function
+# sayHello
+
+# for using parameters in function we need to use positional parameters
+# function sayHello(){
+#     echo "hello, I'm $1 and I'm $2"
+# }
+# 
+# sayHello "omid" "17"
+
