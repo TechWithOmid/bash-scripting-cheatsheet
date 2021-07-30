@@ -100,8 +100,18 @@
 # esac # end the case
         
 # FOR LOOP
-NAMES="Omid Dane Kalle"
-for NAME in $NAMES
+# NAMES="Omid Dane Kalle"
+# for NAME in $NAMES
+# do
+#     echo "Hey, $NAME"
+# done
+
+# run FileRename.sh for see example of how we can use for to rename files
+
+# WHILE LOOP - READ THROUGH A FILE LINE BY LINE
+LINE=1
+while read -r CURRENT_LINE
 do
-    echo "Hey, $NAME"
-done
+    echo "$LINE: $CURRENT_LINE"
+    ((LINE++))
+done < './new-1.txt'
